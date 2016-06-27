@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://scr/end_screen.gd" type="Script" id=1]
+[ext_resource path="res://assets/fnt/munro_g.fnt" type="Font" id=2]
+
+[node name="Win" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+
+margin/left = 308.0
+margin/top = 36.0
+margin/right = 475.0
+margin/bottom = 67.0
+rect/scale = Vector2( 4, 4 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+custom_fonts/font = ExtResource( 2 )
+text = "YOU DID IT!"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+
+margin/left = 129.0
+margin/top = 220.0
+margin/right = 665.0
+margin/bottom = 516.0
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode/enabled = true
+bbcode/bbcode = "YOU FOUGHT THROUGH THE ALIEN HORDES AND SAVED THE MINERS! \n\nTHANKS, CAPTAIN!\n\n[PRESS \"SHOOT\" TO RETURN TO THE MAIN MENU]"
+visible_characters = -1
+
+

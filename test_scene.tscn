@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://assets/tilemap/block_temp.xml" type="TileSet" id=1]
+[ext_resource path="res://scr/test_tilemap.gd" type="Script" id=2]
+[ext_resource path="res://entities/player.scn" type="PackedScene" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 4
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 19, 0, 65536, 0, 65555, 0, 131072, 0, 131091, 0, 196608, 0, 196613, -1610612736, 196627, 0, 262144, 0, 262163, 0, 327680, 0, 327699, 0, 393216, 0, 393235, 0, 458752, 0, 458771, 0, 524288, 0, 524307, 0, 589824, 0, 589825, 0, 589826, 0, 589827, 0, 589828, 0, 589829, 0, 589830, 0, 589831, 0, 589832, 0, 589833, 0, 589834, 0, 589835, 0, 589836, 0, 589837, 0, 589838, 0, 589839, 0, 589840, 0, 589841, 0, 589842, 0, 589843, 0 )
+script/script = ExtResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 128, 128 )
+collision/mask = 5
+
+

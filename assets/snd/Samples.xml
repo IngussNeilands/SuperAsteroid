@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="SampleLibrary" subresource_count="8" version="2.0" version_name="Godot Engine v2.0.stable.official">
+	<ext_resource path="res://assets/snd/Blip.smp" type="Sample" index="0"></ext_resource>
+	<ext_resource path="res://assets/snd/Hit.smp" type="Sample" index="3"></ext_resource>
+	<ext_resource path="res://assets/snd/MonsterShoot.smp" type="Sample" index="4"></ext_resource>
+	<ext_resource path="res://assets/snd/PlayerExplosion.smp" type="Sample" index="5"></ext_resource>
+	<ext_resource path="res://assets/snd/PlayerShoot.smp" type="Sample" index="6"></ext_resource>
+	<ext_resource path="res://assets/snd/Health.smp" type="Sample" index="2"></ext_resource>
+	<ext_resource path="res://assets/snd/Explosion.smp" type="Sample" index="1"></ext_resource>
+	<main_resource>
+		<dictionary name="samples/Blip" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="0">  </resource>
+		</dictionary>
+		<dictionary name="samples/PlayerShoot" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="6">  </resource>
+		</dictionary>
+		<dictionary name="samples/Explosion" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="1">  </resource>
+		</dictionary>
+		<dictionary name="samples/Health" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="2">  </resource>
+		</dictionary>
+		<dictionary name="samples/MonsterShoot" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="4">  </resource>
+		</dictionary>
+		<dictionary name="samples/Hit" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="3">  </resource>
+		</dictionary>
+		<dictionary name="samples/PlayerExplosion" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="5">  </resource>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

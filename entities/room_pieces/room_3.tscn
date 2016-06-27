@@ -1,0 +1,436 @@
+[gd_scene load_steps=8 format=1]
+
+[ext_resource path="res://assets/tilemap/tilemap.xml" type="TileSet" id=1]
+[ext_resource path="res://scr/entities/room_pieces/room.gd" type="Script" id=2]
+[ext_resource path="res://entities/room_pieces/blocks/wall_75p.xml" type="PackedScene" id=3]
+[ext_resource path="res://entities/room_pieces/blocks/wall_50p.xml" type="PackedScene" id=4]
+[ext_resource path="res://entities/room_pieces/blocks/wall_25p.xml" type="PackedScene" id=5]
+[ext_resource path="res://entities/room_pieces/blocks/spawner-destructible_box.xml" type="PackedScene" id=6]
+[ext_resource path="res://entities/room_pieces/blocks/spawner-entity.xml" type="PackedScene" id=7]
+
+[node name="Room" type="TileMap" groups=[ "wall" ]]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 65536, 0, 65537, 0, 65538, 0, 65539, 0, 65540, 0, 65541, 0, 65542, 0, 65543, 0, 65544, 0, 65545, 0, 65546, 0, 65547, 0, 65548, 0, 65549, 0, 65550, 0, 65551, 0, 65552, 0, 65553, 0, 65554, 0, 131072, 0, 131073, 0, 131074, 0, 131075, 0, 131076, 0, 131077, 0, 131078, 0, 131079, 0, 131080, 0, 131081, 0, 131082, 0, 131083, 0, 131084, 0, 131085, 0, 131086, 0, 131087, 0, 131088, 0, 131089, 0, 131090, 0, 196608, 0, 196609, 0, 196610, 0, 196611, 0, 196612, 0, 196613, 0, 196614, 0, 196615, 0, 196616, 0, 196617, 0, 196618, 0, 196619, 0, 196620, 0, 196621, 0, 196622, 0, 196623, 0, 196624, 0, 196625, 0, 196626, 0, 262144, 0, 262145, 0, 262146, 0, 262147, 0, 262148, 0, 262149, 0, 262150, 0, 262151, 0, 262152, 0, 262153, 0, 262154, 0, 262155, 0, 262156, 0, 262157, 0, 262158, 0, 262159, 0, 262160, 0, 262161, 0, 262162, 0, 327680, 0, 327681, 0, 327682, 0, 327683, 0, 327684, 0, 327685, 0, 327686, 0, 327687, 0, 327688, 0, 327689, 0, 327690, 0, 327691, 0, 327692, 0, 327693, 0, 327694, 0, 327695, 0, 327696, 0, 327697, 0, 327698, 0, 393216, 0, 393217, 0, 393218, 0, 393219, 0, 393220, 0, 393221, 0, 393222, 0, 393223, 0, 393224, 0, 393225, 0, 393226, 0, 393227, 0, 393228, 0, 393229, 0, 393230, 0, 393231, 0, 393232, 0, 393233, 0, 393234, 0, 458752, 0, 458753, 0, 458754, 0, 458755, 0, 458756, 0, 458757, 0, 458758, 0, 458759, 0, 458760, 0, 458761, 0, 458762, 0, 458763, 0, 458764, 0, 458765, 0, 458766, 0, 458767, 0, 458768, 0, 458769, 0, 458770, 0, 524288, 1, 524289, 1, 524290, 1, 524291, 1, 524292, 1, 524293, 1, 524294, 1, 524295, 1, 524296, 1, 524297, 1, 524298, 1, 524299, 1, 524300, 1, 524301, 1, 524302, 1, 524303, 1, 524304, 1, 524305, 1, 524306, 1 )
+script/script = ExtResource( 2 )
+
+[node name="75% Wall" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 512, 0 )
+
+[node name="75% Wall1" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 640, 0 )
+
+[node name="75% Wall2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1152, 192 )
+
+[node name="75% Wall3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1152, 192 )
+
+[node name="75% Wall4" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1152, 320 )
+
+[node name="75% Wall5" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1152, 128 )
+
+[node name="75% Wall6" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1152, 0 )
+
+[node name="75% Wall7" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 448, 0 )
+
+[node name="75% Wall8" parent="." instance=ExtResource( 3 )]
+
+[node name="75% Wall9" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 64, 0 )
+
+[node name="75% Wall10" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 0, 64 )
+
+[node name="75% Wall11" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 384, 0 )
+
+[node name="75% Wall12" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 960, 0 )
+
+[node name="75% Wall13" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 896, 0 )
+
+[node name="75% Wall14" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 832, 0 )
+
+[node name="75% Wall15" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 0, 192 )
+
+[node name="75% Wall16" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 0, 384 )
+
+[node name="75% Wall17" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 0, 448 )
+
+[node name="75% Wall18" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 512, 192 )
+
+[node name="75% Wall19" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 640, 192 )
+
+[node name="75% Wall20" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 640, 256 )
+
+[node name="75% Wall21" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 512, 256 )
+
+[node name="75% Wall22" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 576, 384 )
+
+[node name="75% Wall23" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 640, 448 )
+
+[node name="75% Wall24" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 704, 448 )
+
+[node name="75% Wall25" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 256, 128 )
+
+[node name="75% Wall26" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 256, 192 )
+
+[node name="75% Wall27" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 192, 192 )
+
+[node name="75% Wall28" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 960, 384 )
+
+[node name="75% Wall29" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 960, 320 )
+
+[node name="75% Wall30" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1024, 320 )
+
+[node name="50% Wall" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 128, 0 )
+
+[node name="50% Wall1" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 192, 0 )
+
+[node name="50% Wall2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 320, 0 )
+
+[node name="50% Wall3" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 256, 0 )
+
+[node name="50% Wall4" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 768, 0 )
+
+[node name="50% Wall5" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 704, 0 )
+
+[node name="50% Wall6" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1024, 0 )
+
+[node name="50% Wall7" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1088, 0 )
+
+[node name="50% Wall8" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1152, 64 )
+
+[node name="50% Wall9" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1152, 448 )
+
+[node name="50% Wall10" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1152, 384 )
+
+[node name="50% Wall11" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 192, 256 )
+
+[node name="50% Wall12" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 256, 256 )
+
+[node name="50% Wall13" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 0, 320 )
+
+[node name="50% Wall14" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 0, 128 )
+
+[node name="50% Wall15" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 64, 64 )
+
+[node name="50% Wall16" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 192, 448 )
+
+[node name="50% Wall17" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 256, 448 )
+
+[node name="50% Wall18" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 256, 384 )
+
+[node name="50% Wall19" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 576, 192 )
+
+[node name="50% Wall20" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 576, 448 )
+
+[node name="50% Wall21" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 512, 448 )
+
+[node name="50% Wall22" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1088, 64 )
+
+[node name="50% Wall23" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1024, 64 )
+
+[node name="50% Wall24" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 896, 192 )
+
+[node name="50% Wall25" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 832, 192 )
+
+[node name="50% Wall26" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 832, 256 )
+
+[node name="50% Wall27" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 896, 256 )
+
+[node name="50% Wall28" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 896, 320 )
+
+[node name="50% Wall29" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 768, 64 )
+
+[node name="50% Wall30" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 448, 64 )
+
+[node name="50% Wall31" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 384, 64 )
+
+[node name="50% Wall32" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 320, 384 )
+
+[node name="25% Wall" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 128, 192 )
+
+[node name="25% Wall1" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 640, 128 )
+
+[node name="25% Wall2" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 640, 384 )
+
+[node name="25% Wall3" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 960, 448 )
+
+[node name="25% Wall4" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 896, 128 )
+
+[node name="25% Wall5" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 960, 192 )
+
+[node name="25% Wall6" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 960, 256 )
+
+[node name="25% Wall7" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 768, 256 )
+
+[node name="25% Wall8" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 320, 192 )
+
+[node name="25% Wall9" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 320, 448 )
+
+[node name="25% Wall10" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 384, 448 )
+
+[node name="Destructible Box Spawner" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 0, 256 )
+
+[node name="Destructible Box Spawner1" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 1152, 256 )
+
+[node name="Destructible Box Spawner2" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 896, 64 )
+
+[node name="Destructible Box Spawner3" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 256, 64 )
+
+[node name="Destructible Box Spawner4" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 640, 64 )
+
+[node name="Destructible Box Spawner5" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 768, 128 )
+
+[node name="Destructible Box Spawner6" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 768, 192 )
+
+[node name="Destructible Box Spawner7" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 640, 320 )
+
+[node name="Destructible Box Spawner8" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 576, 320 )
+
+[node name="Destructible Box Spawner9" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 256, 320 )
+
+[node name="Destructible Box Spawner10" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 64, 256 )
+
+[node name="Destructible Box Spawner11" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 64, 320 )
+
+[node name="Destructible Box Spawner12" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 192, 128 )
+
+[node name="Destructible Box Spawner13" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 320, 64 )
+
+[node name="Destructible Box Spawner14" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 896, 384 )
+
+[node name="Destructible Box Spawner15" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 896, 448 )
+
+[node name="Destructible Box Spawner16" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 832, 384 )
+
+[node name="Destructible Box Spawner17" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 832, 448 )
+
+[node name="Destructible Box Spawner18" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 448, 256 )
+
+[node name="Destructible Box Spawner19" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 448, 192 )
+
+[node name="Destructible Box Spawner20" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 576, 128 )
+
+[node name="Entity Spawner" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 128, 384 )
+
+[node name="Entity Spawner1" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 320, 256 )
+
+[node name="Entity Spawner2" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 768, 320 )
+
+[node name="Entity Spawner3" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 512, 64 )
+
+[node name="Entity Spawner4" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 1088, 128 )
+
+[node name="Entity Spawner5" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 1024, 448 )
+
+
